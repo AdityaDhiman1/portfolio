@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+header {
+    position: sticky;
+    top: -5px;
+}
+
+.navbar {
+    height: 70px;
+    width: 100%;
+    background: black;
+    display: flex;
+
+}
+
+.navbar .email {
+    height: 70px;
+    width: 20%;
+    line-height: 70px;
+    margin-left: 20px;
+    /* background-color: black; */
+}
+
+.navbar .email i {
+    color: #fff;
+}
+
+.navbar .email a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    align-items: center;
+    width: 80%;
+}
+
+.navbar ul li {
+    width: 15%;
+    text-align: center;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+#name {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5%;
+}
+
+#name .typed-text {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #000;
+    /* Cursor effect */
+    animation: linear 1s;
+    font-size: 3rem;
+    color: #fff;
+    animation: typing 3s steps(800) infinite;
+    letter-spacing: 6px;
+}
+
+#name img {
+    width: 200px;
+    height: 300px;
+    margin-left: 10%;
+    border-radius: 10px;
+}
+#skill {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.skills {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  .skill-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .skill-list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .skill-name {
+    flex: 1;
+  }
+
+  .proficiency {
+    flex: 2;
+  }
+
+  .proficiency-bar {
+    width: 100%;
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+  }
+
+  .proficiency-level {
+    height: 100%;
+    background-color: #3498db;
+    border-radius: 5px;
+  }
+  @keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 40%;
+    }
+}
