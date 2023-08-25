@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #777;
 }
 
 header {
@@ -22,6 +22,7 @@ header {
     width: 100%;
     background: black;
     display: flex;
+
 
 }
 
@@ -69,11 +70,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 5%;
+    max-height: 100vh;
 }
 
-#name .typed-text {
+.typed-text {
     overflow: hidden;
     white-space: nowrap;
     border-right: 3px solid #000;
@@ -83,12 +83,13 @@ header {
     color: #fff;
     animation: typing 3s steps(800) infinite;
     letter-spacing: 6px;
+    margin-left: 20%;
 }
 
 #name img {
     width: 200px;
     height: 300px;
-    margin-left: 10%;
+    /* margin-left: 10%; */
     border-radius: 10px;
 }
 #skill {
